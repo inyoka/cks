@@ -1,4 +1,5 @@
 # ignores set for this project ...
+*.swp
 /home/migrations/
 /cks/secret_settings.py
 
