@@ -7,16 +7,8 @@
 {% block content %}
     <h1>Welcome to your new Wagtail site!</h1>
 
-    {% include_block page.body %}
-
-    <p>or ...</p>
-
-    <article>
-      <div class="hamburger"></div>
-    {% for block in page.body %}
-        <!-- <section> -->
-          {% include_block block %}
-        <!-- </section> -->
-    {% endfor %}
-    </article>
+    <section>
+      {% include_block page.body %}
+    </section>
+    
 {% endblock %}
