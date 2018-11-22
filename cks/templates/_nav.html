@@ -1,0 +1,25 @@
+{% load static %}
+
+{% block nav %}
+
+
+<nav class="navbar navbar-dark">
+  <a class="" href="#"><img class="" src="{% static "imgs/mala-white.svg" %}" alt=""></a>
+  <button class="navbar-toggler ml-auto nav-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <svg width="32px" height="32px" style="enable-background:new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <path class="hamburg" id="hamburg-top" fill="currentColor" d="m4 10h24c1.1 0 2-0.896 2-2s-0.896-2-2-2h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2z"/>
+    <path class="hamburg" id="hamburg-middle" fill="currentColor" d="m28 14h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
+    <path class="hamburg" id="hamburg-bottom" fill="currentColor" d="m28 22h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
+    </svg>
+  </button>
+<div class="hamburger"></div>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Home</a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+    </div>
+  </div>
+
+</nav>
+{% endblock %}
