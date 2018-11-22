@@ -1,0 +1,42 @@
+body{
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  /* position: absolute; */
+  width: 100%;
+  height: 80px;
+  color: rgba(31, 36, 100, 1);
+  background: currentColor;
+}
+
+header::after{
+  content: '';
+  position: absolute;
+  top: 80px;
+  border-left: 100vw solid currentColor;
+  border-top: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  height: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+main{
+  position: fixed;
+  top: 120px;
+}
+
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ...}
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+
+/* ICONS */
+
+.hamburg{  color: white; }
+#hamburg-middle{
+  color: red;
+}
