@@ -30,7 +30,16 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
+        <header>
+            {% block nav %}
+              {% include "_nav.html" %}
+            {% endblock %}
+        </header>
+
+        <main class="container">
         {% block content %}{% endblock %}
+        </main>
+
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/cks.js' %}"></script>
