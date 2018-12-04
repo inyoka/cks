@@ -1,25 +1,42 @@
-{% load static %}
+{% load  static wagtailcore_tags %}
 
 {% block nav %}
 
-
 <nav class="navbar navbar-dark">
-  <a class="" href="#"><img class="" src="{% static "imgs/mala-white.svg" %}" alt=""></a>
-  <button class="navbar-toggler ml-auto nav-toggle" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <svg width="32px" height="32px" style="enable-background:new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <path class="hamburg" id="hamburg-top" fill="currentColor" d="m4 10h24c1.1 0 2-0.896 2-2s-0.896-2-2-2h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2z"/>
-    <path class="hamburg" id="hamburg-middle" fill="currentColor" d="m28 14h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
-    <path class="hamburg" id="hamburg-bottom" fill="currentColor" d="m28 22h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
-    </svg>
-  </button>
-<div class="hamburger"></div>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
+
+    <a class="" href="#"><img class="" src="{% static "imgs/mala-white.svg" %}" alt=""></a>
+
+    <!-- <div class="message">
+      <span id="inspire" class="navbar-text">
+        "Inspire learning."
+      </span>
+    </div> -->
+
+    <div class="dropdown dropdown-menu-left">
+      <button class="btn" type="button" name="button">
+        <i class="fab fa-youtube fa-2x"></i>
+      </button>
+      <button class="btn" type="button" name="button">
+        <i class="fab fa-facebook-f fa-2x"></i>
+      </button>
+      <button class="btn" type="button" name="button">
+        <i class="fab fa-instagram fa-2x"></i>
+      </button>
+      <!-- <a href="#"><i class="fab fa-instagram fa-2x"></a> -->
+      <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <svg width="32px" height="32px" style="enable-background:new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <path class="hamburg" id="hamburg-top" fill="currentColor" d="m4 10h24c1.1 0 2-0.896 2-2s-0.896-2-2-2h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2z"/>
+        <path class="hamburg" id="hamburg-middle" fill="currentColor" d="m28 14h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
+        <path class="hamburg" id="hamburg-bottom" fill="currentColor" d="m28 22h-24c-1.1 0-2 0.896-2 2s0.896 2 2 2h24c1.1 0 2-0.896 2-2s-0.896-2-2-2z"/>
+        </svg>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="{% slugurl 'splash' %}">Splash</a>
+        <a class="dropdown-item" href="{% slugurl 'home' %}">Home</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
     </div>
-  </div>
 
 </nav>
+
 {% endblock %}

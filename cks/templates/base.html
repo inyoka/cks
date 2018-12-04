@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{% static 'css/cks.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -35,10 +36,18 @@
               {% include "_nav.html" %}
             {% endblock %}
         </header>
+        <br>
+        <div class="purple"></div>
 
-        <main class="container">
-        {% block content %}{% endblock %}
+        <main class="">
+        {% block content %}<p>You dont have any content defined yet. - Simon</p>{% endblock %}
         </main>
+
+        <footer>
+          {% block foot %}
+            {% include "_footer.html" %}
+          {% endblock %}
+        </footer>
 
 
         {# Global javascript #}
