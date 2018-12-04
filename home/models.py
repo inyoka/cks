@@ -17,3 +17,15 @@ class HomePage(Page):
     content_panels = Page.content_panels + [
         StreamFieldPanel('body', classname="full"),
     ]
+
+
+class SplashPage(Page):
+    body = StreamField([
+        ('heading', blocks.CharBlock(classname="full title")),
+        ('paragraph', blocks.RichTextBlock()),
+        ('image', ImageChooserBlock()),
+    ])
+
+    content_panels = Page.content_panels + [
+        StreamFieldPanel('body', classname="full"),
+    ]
