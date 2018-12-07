@@ -98,12 +98,15 @@ html {
 @media (min-width: 1200px) { ... }
 
 
-.block-heading{
+main{
   margin-top: 60px;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bolder;
   align-self: center;
+  width: 90%;
 }
+
+
 
 /* ICONS */
 
