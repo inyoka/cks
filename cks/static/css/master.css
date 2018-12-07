@@ -58,18 +58,6 @@ footer::before{
   z-index: -1;
 }
 
-.purple{
-  /* margin-top: 20px; */
-  content: '';
-  position: absolute;
-  top: 80px;
-  border-left: 100vw solid #bcb2d5;
-  border-top: 10px solid #bcb2d5;
-  border-bottom: 50px solid transparent;
-  height: 0;
-  width: 100vw;
-  z-index: -2;
-}
 
 .top.block_  {
    margin-top: 140px;
