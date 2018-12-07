@@ -4,37 +4,12 @@
   font-family: Philosopher;
 }
 
-html{
-  height: 100%;
-}
-
-body{
-  background: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.top{
-  background-image: url("/static/imgs/Chandra Kumala-00136.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  overflow: visible;
-  z-index: -3;
-}
-
-header, footer {
+header {
   width: 100%;
   height: 80px;
   color: rgba(31, 36, 100, 1);
   background: currentColor;
 }
-
-footer{
-  bottom: 0;
-}
-
 header::after{
   content: '';
   position: absolute;
@@ -47,7 +22,84 @@ header::after{
   z-index: -1;
 }
 
-footer::before{
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Patua+One|Philosopher|Sacramento');
+
+*{
+  font-family: Philosopher;
+}
+
+html{
+  height: 100%;
+  background: rgba(31, 36, 100, 1);
+}
+
+body{
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  color: rgba(31, 36, 100, 1);
+  background: currentColor;
+  z-index: 1;
+}
+
+header::after{
+    content: '';
+  border-left: 100vw solid currentColor;
+  border-top: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 1;
+}
+
+nav{
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* header {
+  width: 100%;
+  height: 80px;
+  color: rgba(31, 36, 100, 1);
+  background: currentColor;
+}
+header::after{
+  content: '';
+  position: absolute;
+  top: 80px;
+  border-left: 100vw solid currentColor;
+  border-top: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  height: 0;
+  width: 100vw;
+  z-index: -1;
+} */
+
+main{
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: bolder;
+  align-self: center;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  color: rgba(31, 36, 100, 1);
+  background: currentColor;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* footer::before{
   content: '';
   bottom: 80px;
   border-left: 100vw solid currentColor;
@@ -56,33 +108,31 @@ footer::before{
   height: 0;
   width: 100vw;
   z-index: -1;
-}
+} */
 
 
-.top.block_  {
+/* .top.block_  {
    margin-top: 140px;
-}
+} */
 
-.middle::before{
-
-}
-
-.middle{
+div.middle{
   background: rgba(31, 36, 100, 1);
   color: white;
+  width: 100%;
+  text-align: center;
 }
 
-.bottom{
+/* .bottom{
   margin-bottom: 120px;
   background: white;
   bottom: 0;
-}
+} */
 
-.nav{
+/* .nav{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
+} */
 
 .btn{
   color: white;
@@ -99,13 +149,7 @@ html {
 @media (min-width: 1200px) { ... }
 
 
-main{
-  margin-top: 60px;
-  font-size: 2em;
-  font-weight: bolder;
-  align-self: center;
-  width: 90%;
-}
+
 
 
 
