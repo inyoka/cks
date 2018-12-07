@@ -10,7 +10,21 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <section>
+
+    <div class="purple"></div>
+
+    <section class="top">
+      {% include_block page.body %}
+    </section>
+
+    <div class="middle">
+      <p>We offer local and international programs</p>
+      <i class="fas fa-map-marker-alt"></i>
+      <i class="fas fa-globe-asia"></i>
+      <p>Complete education from 18 months to 18 years.</p>
+    </div>
+
+    <section class="bottom">
       {% include_block page.body %}
     </section>
 
