@@ -2,27 +2,38 @@
 
 *{
   font-family: Philosopher;
+  overflow: hidden;
+}
+
+html{
+  height: 100%;
 }
 
 body{
   background: white;
   display: flex;
   flex-direction: column;
+}
+
+.top{
   background-image: url("/static/imgs/Chandra Kumala-00136.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  z-index: -3;
-  background-size: auto 100%;
+  background-size: cover;
   overflow: visible;
+  z-index: -3;
 }
 
 header, footer {
-  position: absolute;
   width: 100%;
   height: 80px;
   color: rgba(31, 36, 100, 1);
   background: currentColor;
+}
+
+footer{
+  bottom: 0;
 }
 
 header::after{
@@ -32,6 +43,17 @@ header::after{
   border-left: 100vw solid currentColor;
   border-top: 0 solid transparent;
   border-bottom: 20px solid transparent;
+  height: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+footer::before{
+  content: '';
+  bottom: 80px;
+  border-left: 100vw solid currentColor;
+  border-bottom: 0 solid transparent;
+  border-top: 20px solid transparent;
   height: 0;
   width: 100vw;
   z-index: -1;
@@ -50,54 +72,34 @@ header::after{
   z-index: -2;
 }
 
+.top.block_  {
+   margin-top: 140px;
+}
+
+.middle::before{
+
+}
+
+.middle{
+  background: rgba(31, 36, 100, 1);
+  color: white;
+}
+
+.bottom{
+  margin-bottom: 120px;
+  background: white;
+  bottom: 0;
+}
+
 .nav{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-#inspire{
-  font-family: 'Sacramento', cursive;
-  font-size: 2em;
-  font-weight: normal;
-  color: white;
-  opacity: 1;
-  /* font-family: Courgette; */
-  /* font-family: Dancing+Script; */
-  /* font-family: Patua+One; */
-  /* font-family: Philosopher; */
-  /* font-family: Sacramento; */
-}
-
 .btn{
-  background:  rgba(31, 36, 100, 1);
+  background:  transparent;
 }
-
-main{
-  position: fixed;
-  top: 80px;
-  /* background: yellow; */
-  /* background-image: url("imgs/Chandra Kumala-00136.jpg"); */
-
-  /* {% static "imgs/Chandra Kumala-00136.jpg" %} */
-}
-
-footer::before{
-  content: '';
-  position: absolute;
-  bottom: 80px;
-  border-left: 100vw solid currentColor;
-  border-bottom: 0 solid transparent;
-  border-top: 20px solid transparent;
-  height: 0;
-  width: 100vw;
-  z-index: -1;
-}
-
-footer{
-  bottom: 0;
-}
-
 
 @media (min-width: 576px) { ... }
 @media (min-width: 768px) { ...}
@@ -116,14 +118,13 @@ html {
   align-self: center;
 }
 
-
 /* ICONS */
 
-.hamburg{  color: white; }
+/* .hamburg{  color: white; }
 #hamburg-middle{
   color: red;
 }
 
 .fab{
   color: white;
-}
+} */
