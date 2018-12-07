@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags %}
+{% load static wagtailcore_tags %}
+
+{% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/splash.css' %}">
+{% endblock %}
+
 
 {% block body_class %}template-homepage{% endblock %}
 
