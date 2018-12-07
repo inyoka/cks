@@ -1,4 +1,81 @@
-body{
-  background-image: url("/static/imgs/Chandra Kumala-00136.jpg");
-  background-size:cover;
+body {
+  background: url("/static/imgs/Chandra Kumala-00136.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* header {
+  width: 100%;
+  height: 80px;
+  color: rgba(31, 36, 100, 1);
+  background: currentColor;
+}
+header::after{
+  content: '';
+  position: absolute;
+  top: 80px;
+  border-left: 100vw solid currentColor;
+  border-top: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  height: 0;
+  width: 100vw;
+  z-index: -1;
+} */
+
+nav{
+  width: 100%;
+}
+
+main{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+
+.block-paragraph{
+  width: 30%;
+  float: right;
+  text-align: right;
+  font-size: 2em;
+  text-shadow: white 2px 0 10px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+
+
+.social{
+  display: flex;
+  justify-content:space-between;
+  margin-top: auto;
+  bottom: 5%;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn{
+  color: white;
+  background:  transparent;
+    text-shadow: black 1px 1px 10px;
+}
+
+#youtube, #facebook, #instagram{
+  visibility: hidden;
 }

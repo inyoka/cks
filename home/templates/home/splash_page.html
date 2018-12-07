@@ -9,23 +9,33 @@
 
 {% block body_class %}template-homepage{% endblock %}
 
+{% block nav-left %}
+  <div class="nav-left">
+      <a class="" href="#">
+        <img class="" src="{% static "imgs/mala-blue.svg" %}" alt="">
+      </a>
+  </div>
+{% endblock %}
+
 {% block content %}
 
-    <div class="purple"></div>
-
-    <section class="top">
+    <section>
       {% include_block page.body %}
     </section>
 
-    <div class="middle">
-      <p>We offer local and international programs</p>
-      <i class="fas fa-map-marker-alt"></i>
-      <i class="fas fa-globe-asia"></i>
-      <p>Complete education from 18 months to 18 years.</p>
-    </div>
+{% endblock %}
 
-    <section class="bottom">
-      {% include_block page.body %}
-    </section>
 
+{% block foot %}
+<div class="social ">
+  <button class="btn" type="button" name="button">
+    <i class="fab fa-youtube fa-3x"></i>
+  </button>
+  <button class="btn" type="button" name="button">
+    <i class="fab fa-facebook-f fa-3x"></i>
+  </button>
+  <button class="btn" type="button" name="button">
+    <i class="fab fa-instagram fa-3x"></i>
+  </button>
+</div>
 {% endblock %}
