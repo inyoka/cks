@@ -86,6 +86,6 @@ footer {
 
 
 .wagtail-userbar {
-    top: 20% !important;
-    left: 10px !important;
+    bottom: 100px !important;
+    right: 20px !important;
 }
