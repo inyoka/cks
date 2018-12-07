@@ -33,6 +33,8 @@ main{
   width: 90%;
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -45,13 +47,15 @@ section{
 
 
 .block-paragraph{
-  width: 30%;
-  float: right;
-  text-align: right;
+  width: 100%;
+  text-align: center;
   font-size: 2em;
   text-shadow: white 2px 0 10px;
+  display: inline;
 }
-
+p::before, p::after {
+    content: '"';
+}
 
 footer {
   position: absolute;
