@@ -1,0 +1,22 @@
+{% load  static wagtailcore_tags %}
+
+{% block nav-left %}
+
+    <div class="left">
+        <a id="logo-white" class="" href="#">
+          <img class="" src="{% static "imgs/mala-white.svg" %}" alt="">
+        </a>
+    </div>
+    <div class="right ml-auto">
+        <button id="youtube" class="btn" type="button" name="button">
+          <i class="fab fa-youtube fa-2x"></i>
+        </button>
+        <button id="facebook" class="btn" type="button" name="button">
+          <i class="fab fa-facebook-f fa-2x"></i>
+        </button>
+        <button id="instagram" class="btn" type="button" name="button">
+          <i class="fab fa-instagram fa-2x"></i>
+        </button>
+    </div>
+
+{% endblock %}
