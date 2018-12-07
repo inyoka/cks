@@ -1,5 +1,7 @@
 {% load static wagtailuserbar %}
 
+{% load wagtailcore_tags %}
+
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -32,7 +34,7 @@
     </head>
 
     <body class="flex {% block body_class %}{% endblock %}">
-
+        {% wagtailuserbar 'bottom-right' %}
         <header>
             <nav class="navbar navbar-dark">
               {% block nav-left %}
