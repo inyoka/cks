@@ -9,10 +9,10 @@ from wagtail.images.blocks import ImageChooserBlock
 
 class HomePage(Page):
     body = StreamField([
-        ('heading', blocks.CharBlock(classname="full title")),
-        ('paragraph', blocks.RichTextBlock()),
-        ('image', ImageChooserBlock()),
-    ])
+        ('heading', blocks.CharBlock(classname="full title", null=True, blank=True)),
+        ('paragraph', blocks.RichTextBlock(null=True, blank=True)),
+        ('image', ImageChooserBlock(null=True, blank=True)),
+    ], null=True, blank=True)
 
     content_panels = Page.content_panels + [
         StreamFieldPanel('body', classname="full"),
@@ -21,10 +21,10 @@ class HomePage(Page):
 
 class SplashPage(Page):
     body = StreamField([
-        ('heading', blocks.CharBlock(classname="full title")),
-        ('paragraph', blocks.RichTextBlock()),
-        ('image', ImageChooserBlock()),
-    ])
+        ('heading', blocks.CharBlock(classname="full title", null=True, blank=True)),
+        ('paragraph', blocks.RichTextBlock(null=True, blank=True)),
+        ('image', ImageChooserBlock(null=True, blank=True)),
+    ], null=True, blank=True)
 
     content_panels = Page.content_panels + [
         StreamFieldPanel('body', classname="full"),
